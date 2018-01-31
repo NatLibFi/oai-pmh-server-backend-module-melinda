@@ -25,6 +25,8 @@
 * for the JavaScript code in this file.
 *
 */
+const OAI_IDENTIFIER_PREFIX = 'oai:melinda.kansalliskirjasto.fi:';
+
 export function readEnvironmentVariable(name, defaultValue, opts) {
 	if (process.env[name] === undefined) {
 		if (defaultValue === undefined) {
@@ -49,4 +51,12 @@ export function parseToken(token) {
 	return buffer.toString('utf8').split(/:/).reduce((product, value, index) => {
 		return Object.assign(product, index === 0 ? {offset: value} : {tableName: `temp${value}`});
 	}, {});
+}
+
+export function convertFromOaiIdentifier(id) {
+	return id.replace(new RegExp(`^${OAI_IDENTIFIER_PREFIX}`), '');
+}
+
+export function convertToOaiIdentifier(id) {
+	return `${OAI_IDENTIFIER_PREFIX}${id}`;
 }
