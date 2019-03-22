@@ -1,3 +1,4 @@
+# DEPRECATED (Superseded by [melinda-oai-pmh-provider](https://github.com/NatLibFi/melinda-oai-pmh-provider))
 # Melinda backend module for oai-pmh-server [![NPM Version](https://img.shields.io/npm/v/@natlibfi/oai-pmh-server-backend-module-melinda.svg)](https://npmjs.org/package/@natlibfi/oai-pmh-server-backend-module-melinda) [![Build Status](https://travis-ci.org/NatLibFi/oai-pmh-server-backend-module-melinda.svg)](https://travis-ci.org/NatLibFi/oai-pmh-server-backend-module-melinda) [![Test Coverage](https://codeclimate.com/github/NatLibFi/oai-pmh-server-backend-module-melinda/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/oai-pmh-server-backend-module-melinda/coverage)
 
 Melinda backend module for oai-pmh-server
